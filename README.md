@@ -1,6 +1,12 @@
-# sudo
+# WATCH
 
 Easily prefix your current or previous commands with `watch` by pressing <kbd>CTRL + W</kbd>
+
+Clone this repository into ```$ZSH_CUSTOM/plugins``` (by default ```~/.oh-my-zsh/custom/plugins```)
+
+```bash
+git clone https://github.com/enrico9034/watch-plugin-zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/watch
+```
 
 To use it, add `watch` to the plugins array in your zshrc file:
 
