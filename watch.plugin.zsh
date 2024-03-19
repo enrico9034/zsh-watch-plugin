@@ -38,7 +38,7 @@ watch-command-line() {
     LBUFFER="${WHITESPACE}${LBUFFER}"
 }
 zle -N watch-command-line
-# Defined shortcut keys: [Esc] [Esc]
-bindkey -M emacs '^W' watch-command-line
-bindkey -M vicmd '^W' watch-command-line
-bindkey -M viins '^W' watch-command-line
+# Defined shortcut keys: Alt+w
+bindkey -M emacs '^[w' watch-command-line
+bindkey -M vicmd '^[w' watch-command-line
+bindkey -M viins '^[w' watch-command-line
