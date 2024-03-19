@@ -23,6 +23,11 @@ watch-command-line() {
         LBUFFER="${LBUFFER:1}"
     fi
 
+    # Expand aliases
+    unset 'functions[_watch-plugin-expand]' # Clear function set by previous call
+    functions[_watch-plugin-expand]=${LBUFFER} # Save LBUFFER to functions file, this will expand the aliases
+    (($+functions[_watch-plugin-expand])) && LBUFFER=${functions[_watch-plugin-expand]#$'\t'} # Get the (expanded) function content back and clear the first tab(s)
+
     if [[ $BUFFER == watch\ * ]]; then
         if [[ ${#LBUFFER} -le 5 ]]; then
             RBUFFER="${BUFFER#watch }"
