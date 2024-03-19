@@ -1,8 +1,8 @@
 # WATCH
 
-Easily prefix your current or previous commands with `watch` by pressing <kbd>CTRL + W</kbd>
+Easily prefix your current or previous commands with `watch` by pressing <kbd>Alt + w</kbd>
 
-1. Clone this repository into ```$ZSH_CUSTOM/plugins``` (by default ```~/.oh-my-zsh/custom/plugins```)
+1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
 ```bash
 git clone https://github.com/enrico9034/watch-plugin-zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/watch
@@ -13,6 +13,7 @@ git clone https://github.com/enrico9034/watch-plugin-zsh.git ${ZSH_CUSTOM:-~/.oh
 ```zsh
 plugins=(... watch)
 ```
+
 3. Start a new terminal session.
 
 ## Usage
@@ -25,7 +26,7 @@ Say you have typed a long command and forgot to add `watch` in front:
 $ kubectl get pod -n namespace
 ```
 
-By pressing the <kbd>CTRL + W</kbd> key, you will have the same command with `watch` prefixed without typing:
+By pressing the <kbd>Alt + w</kbd> key, you will have the same command with `watch` prefixed without typing:
 
 ```console
 $ watch kubectl get pod -n namespace
@@ -40,7 +41,7 @@ $ kubectl get pod -n namespace
 $
 ```
 
-By pressing the <kbd>CTRL + W</kbd> key, you will have the same command with `watch` prefixed without typing:
+By pressing the <kbd>Alt + w</kbd> key, you will have the same command with `watch` prefixed without typing:
 
 ```console
 $ rm some-system-file.txt
@@ -50,4 +51,5 @@ $
 ```
 
 ### This plugin is based on official sudo plugin
+
 sudo official plugin: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
